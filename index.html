@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beige and White Website</title>
+    <style>
+        body {
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .textbox {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Town Of Salem Easy Wills</h1>
+        <p>Website made by ImAcni on ToS2 (friend me)</p>
+        <h2 style="margin-top: 50px">General Townie Wills</h2>
+        <p class="textbox">Ranked Practice:</p>
+        <pre>
+Name - Role
+
+N1 -
+N2 - 
+N3 - 
+
+TPow - 
+TK - 
+TP -  
+TI - 
+TI - 
+RT1 - 
+RT2 - 
+RT3 - 
+RT4 - 
+        </pre>
+
+        <p class="textbox">Town Traitor:</p>
+        <pre>
+Name - Role
+
+N1 -  
+N2 -  
+N3 -  
+
+Crusader -  
+TI -  
+TI - 
+TP - 
+TK - 
+TS - 
+TPow - 
+TPow - 
+RT1 - 
+RT2 - 
+RT3 - 
+        </pre>
+
+        <p class="textbox">(Cat) Normal:</p>
+        <pre >
+     /\_/\  (
+    ( ^.^ ) _)
+      \"/  (
+    ( | | )
+   (__d b__)
+
+Name - Role
+N1 -  
+N2 - 
+N3 -  
+N4 -  
+N5 - 
+         </pre>
+         <p class="textbox">(Computer) Normal:</p>
+         <pre>
+
+    .--.
+    |__| .-------.
+    |=.| |.-----.|
+    |--| || UR  ||
+    |  | |'-BAD-'|
+    |__|~')_____('
+     
+Name - Role
+ 
+N1 -  
+N2 -  
+N3 -  
+ 
+         </pre>
+
+         <p class="textbox">(Bow&Arrow) Normal:</p>
+         <pre>
+
+    (
+     \
+      )
+##-------->
+      )
+     /
+    (
+     
+Name - Role
+ 
+N1 -  
+N2 -  
+N3 -  
+ 
+         </pre>
+
+         <p class="textbox">Notepad:</p>
+         <pre>
+1 - 
+2 - 
+3 - 
+4 - 
+5 - 
+6 - 
+7 - 
+8 - 
+9 - 
+10 - 
+11 - 
+12 - 
+13 - 
+14 - 
+15 - 
+         </pre>
+    </div>
+
+    <script>
+        const codeBlocks = document.querySelectorAll("pre");
+        codeBlocks.forEach((block) => {
+            const copyButton = document.createElement("button");
+            copyButton.textContent = "Copy";
+            copyButton.classList.add("copy-button");
+            block.parentNode.insertBefore(copyButton, block);
+
+            copyButton.addEventListener("click", () => {
+                copyToClipboard(block.textContent);
+            });
+        });
+
+        function copyToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+        }
+    </script>
+</body>
+</html>
